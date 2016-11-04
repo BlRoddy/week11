@@ -1,0 +1,26 @@
+{
+  "name": "week11",
+  "version": "1.0.0",
+  "description": "hangman2",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlRoddy/week11.git"
+  },
+  "keywords": [
+    "hangman"
+  ],
+  "author": "Blake Roddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlRoddy/week11/issues"
+  },
+  "homepage": "https://github.com/BlRoddy/week11#readme",
+  "dependencies": {
+    "inquirer": "^1.2.2",
+    "require": "^2.4.20"
+  }
+}
