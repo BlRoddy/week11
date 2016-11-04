@@ -1,12 +1,12 @@
 var game = require("./game.js");
-var wordCon = require("./word.js");
-var letterCon = require("./letter.js");
+var wordCons = require("./word.js");
+var letterCons = require("./letter.js");
 var inquirer = require("inquirer");
 var randomWord = game.randomWord;
 var letterGuessed;
 exports.letter;
 
-var myWord = new wordCon.wordCon(game.randomWord);
+var myWord = new wordCons.wordCons(game.randomWord);
 var maxGuesses = 10;
 
 
@@ -39,9 +39,9 @@ function guess(){
 					//if games does not end continue to the next guess and recurive call
 				console.log('-------------------\n');
 				console.log('You have ' + (maxGuesses - myWord.guessesMade.length) + ' guesses left.')
-				takeAGuess();
+				guess();
 				}
   );
 }
 //starts game over
-takeAGuess();
+guess();
