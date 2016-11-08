@@ -26,22 +26,22 @@ function guess(){
 			var regEx = new RegExp("^[a-zA-Z\s]{1,1}$");
 			return regEx.test(str);
 				}
-		//game controls
+		
 		}]).then(function(letterInput){
 				var letter = letterInput.letter; 
-				//checks
+				
 				myWord.findLetter(letter);
-					//winner
+					
 					if(myWord.isComplete()){ 
 					console.log('Yes! It was ' + myWord.toString() + '!');
 					return;
 					}
-					//if games does not end continue to the next guess and recurive call
+					
 				console.log('-------------------\n');
 				console.log('You have ' + (maxGuesses - myWord.guessesMade.length) + ' guesses left.')
 				guess();
 				}
   );
 }
-//starts game over
+
 guess();
